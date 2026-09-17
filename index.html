@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node Groove Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -25,43 +26,111 @@
         <p>Node Groove Solutions builds structured, reliable systems that help enterprises move data and processes without friction.</p>
         <a href="#contact" class="cta-button">Get in Touch</a>
     </section>
+    <!-- ABOUT SECTION -->
 
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Node Groove Solutions stands at the intersection of complex systems architecture, precision technology, and harmonious digital flow. We build with reliability and structured innovation at the core of every solution we deliver.</p>
-    </section>
+<section id="about" class="section about-section">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>Node Groove Solutions was founded to solve a problem every growing business
+      eventually faces: too many systems that don't talk to each other. We specialize
+      in connecting, migrating, and automating enterprise data — turning scattered
+      spreadsheets, legacy databases, and disconnected tools into one seamless,
+      reliable pipeline. Our team combines hands-on technical expertise with a focus
+      on zero-downtime delivery, so our clients can keep running while we modernize
+      what's underneath. From data migration to ongoing operations support, we build
+      systems that just work — quietly, reliably, and at scale.</p>
+    </div>
+    <img src="assets/teamwork.jpg" alt="Node Groove team at work" class="about-img">
+  </div>
+</section>
+<section id="mission" class="section mission-section">
+  <h2>Our Mission</h2>
+  <p>To help businesses move faster by removing the friction between their systems —
+  building data infrastructure that's reliable enough to trust and simple enough to forget
+  it's even there.</p>
+</section>
 
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Systems Architecture</h3>
-                <p>Designing robust, scalable infrastructure built for long-term reliability.</p>
-            </div>
-            <div class="card">
-                <h3>Data Integration</h3>
-                <p>Seamless data flow across platforms, eliminating friction and downtime.</p>
-            </div>
-            <div class="card">
-                <h3>Technical Consulting</h3>
-                <p>Expert guidance to align technology decisions with business goals.</p>
-            </div>
-        </div>
-    </section>
+<section id="why-us" class="section why-us-section">
+  <h2>Why Choose Us</h2>
+  <div class="why-cards">
+    <div class="why-card">
+      <h3>Zero-Downtime Delivery</h3>
+      <p>We migrate and integrate systems without disrupting your day-to-day operations.</p>
+    </div>
+    <div class="why-cards">
+  <div class="why-card">
+    <div class="icon">⚡</div>
+    <h3>Zero-Downtime Delivery</h3>
+    <p>We migrate and integrate systems without disrupting your day-to-day operations.</p>
+  </div>
+  <div class="why-card">
+    <div class="icon">📈</div>
+    <h3>Built to Scale</h3>
+    <p>Our solutions grow with your business, not around today's problem alone.</p>
+  </div>
+  <div class="why-card">
+    <div class="icon">🤝</div>
+    <h3>Hands-On Support</h3>
+    <p>We stay involved after launch — monitoring, optimizing, and adjusting as you grow.</p>
+  </div>
+</div>
+</section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+<!-- SERVICES SECTION -->
+<section id="services" class="section services">
+  <h2>Our Services</h2>
+  <div class="service-cards">
+    <div class="card">
+      <h3>Data Migration</h3>
+      <p>Safe, structured transfer of data between legacy and modern systems with zero downtime.</p>
+    </div>
+    <div class="card">
+      <h3>Systems Integration</h3>
+      <p>Connecting your existing tools and platforms so information flows automatically.</p>
+    </div>
+    <div class="card">
+      <h3>IT Operations Support</h3>
+      <p>Ongoing monitoring, troubleshooting, and optimization for enterprise infrastructure.</p>
+    </div>
+    <div class="card">
+      <h3>Process Automation</h3>
+      <p>Reducing manual work by automating repetitive data and workflow tasks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section contact">
+  <h2>Get in Touch</h2>
+  <p style="color:#555; max-width:500px; margin:0 auto 10px; text-align:center;">
+  Have a project in mind? Tell us what you're working on and we'll get back to you within 1–2 business days.
+</p>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
     <footer>
         <p>&copy; 2026 Node Groove Solutions. All rights reserved.</p>
     </footer>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
 
 </body>
 </html>

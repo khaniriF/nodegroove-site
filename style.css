@@ -120,10 +120,14 @@ h1, h2, h3 {
   padding: 80px 20px;
   text-align: center;
 }
-
 .services h2 {
-  margin-bottom: 40px;
-  font-size: 2rem;
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-shadow: 0 0 15px rgba(51,187,255,0.6);
+}
+
+.services h2::after {
+  background: #33bbff;
 }
 
 .service-cards {
@@ -216,4 +220,273 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
+}
+.section {
+  padding: 60px 40px;
+  color: white;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.services {
+  background-color: #001a5c;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.contact button {
+  background-color: #33bbff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.card {
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero h1 {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.cta-button {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.hero {
+  background: linear-gradient(rgba(0,18,51,0.75), rgba(0,18,51,0.85)),
+              url('assets/datacentre.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-text {
+  color: #001233;
+}
+
+.about-text h2 {
+  color: #001233;
+}
+
+.about-text h2::after {
+  background: #33bbff;
+}
+
+.about-img {
+  flex: 1;
+  min-width: 280px;
+  max-width: 450px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+.services {
+  background: linear-gradient(rgba(0,26,92,0.9), rgba(0,26,92,0.9)),
+              url('assets/darkenedtech.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.mission-section {
+  text-align: center;
+  background: #001a5c;
+}
+
+.mission-section h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-shadow: 0 0 15px rgba(51,187,255,0.6);
+}
+
+.mission-section h2::after {
+  background: #33bbff;
+}
+
+.why-us-section {
+  text-align: center;
+}
+
+.why-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.why-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 14px;
+  width: 240px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.15);
+}
+
+.why-card h3 {
+  color: #33bbff;
+  margin-bottom: 10px;
+}
+.why-us-section {
+  background: #f4f7fb;
+  padding: 80px 40px;
+}
+
+.why-card {
+  background: white;
+  border-top: 4px solid #33bbff;
+  border-radius: 14px;
+  padding: 30px 25px;
+  width: 260px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: center;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(51,187,255,0.25);
+}
+
+.why-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.why-card h3 {
+  color: #001233;
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.contact {
+  background: #f4f7fb;
+  padding: 80px 40px;
+}
+
+.contact h2 {
+  color: #001233;
+}
+
+.contact h2::after {
+  background: #33bbff;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 14px 16px;
+  border: 2px solid #dbe4f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #001233;
+  background: white;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #33bbff;
+  box-shadow: 0 0 0 4px rgba(51,187,255,0.15);
+}
+
+.contact button {
+  background: linear-gradient(135deg, #33bbff, #0077cc);
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.contact button:hover {
+  box-shadow: 0 8px 25px rgba(51,187,255,0.4);
+  transform: translateY(-2px);
+}
+.contact-intro {
+  color: #555 !important;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  text-align: center;
+  font-size: 1rem;
 }
